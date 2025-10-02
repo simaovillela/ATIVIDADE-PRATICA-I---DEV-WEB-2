@@ -1,39 +1,43 @@
-/* Importa a mesma fonte da timeline */
+/* Importa a fonte Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
+/* Reset básico e box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos do corpo da página (body) */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0f2f5; 
-    color: #1c1e21;           
+    background-color: #f0f2f5;
+    color: #1c1e21;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.container-cadastro {
-    background-color: #ffffff; 
+/* Container principal genérico para os formulários */
+.container-auth {
+    background-color: #ffffff;
     width: 100%;
     max-width: 450px;
     padding: 40px;
-    border: 1px solid #e0e0e0; 
-    border-radius: 8px;       
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); 
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.container-cadastro h1 {
+.container-auth h1 {
     font-size: 1.5rem; /* 24px */
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
 }
 
+/* Grupos de formulário (label + input) */
 .grupo-form {
     margin-bottom: 20px;
 }
@@ -49,8 +53,8 @@ body {
 .grupo-form input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #dcdfe6; 
-    border-radius: 6px;       
+    border: 1px solid #dcdfe6;
+    border-radius: 6px;
     box-sizing: border-box;
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
@@ -59,7 +63,7 @@ body {
 }
 
 .grupo-form input::placeholder {
-    color: #657786; 
+    color: #657786;
 }
 
 .grupo-form input:focus {
@@ -67,36 +71,38 @@ body {
     box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.2);
 }
 
-.btn-cadastrar {
+/* Botão principal genérico */
+.btn-principal {
     width: 100%;
     padding: 12px;
     background-color: #000000;
-    color: #ffffff;           
+    color: #ffffff;
     border: none;
-    border-radius: 6px;        
+    border-radius: 6px;
     font-size: 1rem;
-    font-weight: 700;          
+    font-weight: 700;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
 
-.btn-cadastrar:hover {
+.btn-principal:hover {
     background-color: #333;
 }
 
-.login-link {
+/* Link alternativo para mudar de tela (login/cadastro) */
+.link-alternativo {
     text-align: center;
     margin-top: 25px;
     font-size: 0.9rem;
-    color: #657786; 
+    color: #657786;
 }
 
-.login-link a {
-    color: #1da1f2; 
+.link-alternativo a {
+    color: #1da1f2;
     text-decoration: none;
     font-weight: 500;
 }
 
-.login-link a:hover {
+.link-alternativo a:hover {
     text-decoration: underline;
 }

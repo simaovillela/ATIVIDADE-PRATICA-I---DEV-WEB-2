@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Rede Social</title>
+    <title>Cadastro - Sua Rede Social</title>
     <link rel="stylesheet" href="./assets/css/cadastro.css">
 </head>
 <body>
 
-    <div class="container-cadastro">
+    <div class="container-auth">
         <h1>Crie sua Conta</h1>
         <form>
             <div class="grupo-form">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
             </div>
             <div class="grupo-form">
                 <label for="usuario">Usuário</label>
-                <input type="text" id="usuario" name="usuario" required>
+                <input type="text" id="usuario" name="usuario" required placeholder="@seuusuario">
             </div>
             <div class="grupo-form">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
             </div>
             <div class="grupo-form">
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" required>
             </div>
             <div class="grupo-form">
-                <label for="confirmar-senha">Confirmação de Senha</label>
+                <label for="confirmar-senha">Confirme a Senha</label>
                 <input type="password" id="confirmar-senha" name="confirmar-senha" required>
             </div>
-            <button type="submit" class="btn-cadastrar">Cadastrar</button>
+            <button type="submit" class="btn-principal">Cadastrar</button>
         </form>
-        <div class="login-link">
-            Já tem uma conta? <a href="#">Faça login</a>
+        <div class="link-alternativo">
+            Já tem uma conta? <a href="login.html">Faça login</a>
         </div>
     </div>
 
